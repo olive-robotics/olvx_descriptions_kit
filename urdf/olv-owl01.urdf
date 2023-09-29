@@ -7,9 +7,9 @@
 
 <link name="base_link" />
 <xacro:olv-srv01 namespace="pan" parent_link="base_link" mounting_side="bottom" mounting_rotation="0"/>
-<xacro:olv-xbolt namespace="pan_tilt" parent_link="pan_rotor_link" />
-<xacro:olv-srv01 namespace="tilt" parent_link="pan_tilt_child_link" mounting_side="left" mounting_rotation="0"/>
-<xacro:olv-lbracket namespace="tilt_eye" parent_link="tilt_rotor_link" mounting_side="top" mounting_rotation="-1.57"/>
-<xacro:olv-cam01 namespace="eye" parent_link="tilt_eye_child_link" mounting_side="left" mounting_rotation="3.141"/>
+<xacro:olv-xbolt namespace="pan_x_tilt" parent_link="pan_rotor_link" />
+<xacro:olv-srv01 namespace="tilt" parent_link="pan_x_tilt_child_link" mounting_side="left" mounting_rotation="0"/>
+<xacro:olv-lbracket namespace="tilt_l_eye" parent_link="tilt_rotor_link" mounting_side="top" mounting_rotation="-1.57079632679"/>
+<xacro:olv-cam01 namespace="eye" parent_link="tilt_l_eye_child_link" mounting_side="left" mounting_rotation="3.14159265359"/>
 
 </robot>
