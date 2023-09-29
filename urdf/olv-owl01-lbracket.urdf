@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="olv-lbracket-robot">
+    <xacro:include filename="$(find olive_owl_description)/urdf/olv-owl01-lbracket.urdf.xacro" />
+    <link name="base_link"/>
+    <xacro:olv-owl01-lbracket namespace="olv-owl01-lbracket" parent_link="base_link" mounting_side="top" mounting_rotation="1.57"/>
+</robot>
