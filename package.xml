@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>olive_kits_description</name>
+  <name>olv_kit_descriptions</name>
   <version>0.0.1</version>
   <description>Description package for Olive Robotics kits.</description>
   <maintainer email="benjamin@olive-robotics.com">Benjamin Felbrich</maintainer>
@@ -12,8 +12,8 @@
   <depend>joint_state_publisher</depend>
   <depend>robot_state_publisher</depend>
   <depend>urdf</depend>
-  <depend>olive_modules_description</depend>
-  <depend>olive_connectors_description</depend>
+  <depend>olv_module_descriptions</depend>
+  <depend>olv_connector_descriptions</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

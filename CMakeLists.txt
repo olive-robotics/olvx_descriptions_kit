@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(olive_kits_description)
+project(olv_kit_descriptions)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,8 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
-find_package(olive_modules_description REQUIRED)
-find_package(olive_connectors_description REQUIRED)
+find_package(olv_module_descriptions REQUIRED)
+find_package(olv_connector_descriptions REQUIRED)
 
 install(
   DIRECTORY urdf
