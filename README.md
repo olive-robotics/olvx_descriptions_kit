@@ -7,6 +7,9 @@ It has .urdf definitions, meshes, collision info etc.
 ## Usage
 
 ```
+sudo apt install ros-humble-xacro
+sudo apt install ros-humble-joint-state-publisher-gui
+
 git clone https://gitlab.com/oliverobotics/hardware/descriptions/olv_kit_descriptions.git
 
 colcon build

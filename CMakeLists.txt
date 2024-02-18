@@ -9,10 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 find_package(olv_module_descriptions REQUIRED)
-find_package(olv_connector_descriptions REQUIRED)
+find_package(olv_brackets_descriptions REQUIRED)
 
 install(
-  DIRECTORY urdf
+  DIRECTORY launch rviz urdf
   DESTINATION share/${PROJECT_NAME}
 )
 
