@@ -12,7 +12,15 @@ git clone https://gitlab.com/oliverobotics/hardware/descriptions/olv_kit_descrip
 colcon build
 
 source install/setup.bash
+```
 
+### OWL
+```
 ros2 launch olv_kit_descriptions visualize_olive_owl.launch.py
+```
+
+### ANT
+```
+ros2 launch olv_kit_descriptions visualize_olive_ant.launch.py
 
 ```
