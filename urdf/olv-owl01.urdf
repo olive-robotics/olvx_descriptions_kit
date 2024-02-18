@@ -2,8 +2,8 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="olv-owl01">
 <xacro:include filename="$(find olv_module_descriptions)/urdf/olv-srv01.urdf.xacro" />
 <xacro:include filename="$(find olv_module_descriptions)/urdf/olv-cam01.urdf.xacro" />
-<xacro:include filename="$(find olv_connector_descriptions)/urdf/olv-xbolt.urdf.xacro" />
-<xacro:include filename="$(find olv_connector_descriptions)/urdf/olv-lbracket.urdf.xacro" />
+<xacro:include filename="$(find olv_brackets_descriptions)/urdf/olv-xbolt.urdf.xacro" />
+<xacro:include filename="$(find olv_brackets_descriptions)/urdf/olv-lbracket.urdf.xacro" />
 
 <link name="base_link" />
 <xacro:olv-srv01 namespace="pan" parent_link="base_link" mounting_side="bottom" mounting_rotation="0"/>
