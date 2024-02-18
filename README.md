@@ -13,6 +13,6 @@ colcon build
 
 source install/setup.bash
 
-ros2 launch olv_kit_descriptions visualize_olive_imu.launch.py
+ros2 launch olv_kit_descriptions visualize_olive_owl.launch.py
 
 ```
