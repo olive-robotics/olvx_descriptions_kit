@@ -1,12 +1,23 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="olv-ant01">
-<xacro:include filename="$(find olv_module_descriptions)/urdf/olv-srv01.urdf.xacro" />
-<xacro:include filename="$(find olv_module_descriptions)/urdf/olv-cam01.urdf.xacro" />
 <xacro:include filename="$(find olv_brackets_descriptions)/urdf/olv-xbolt.urdf.xacro" />
 <xacro:include filename="$(find olv_brackets_descriptions)/urdf/olv-lbracket.urdf.xacro" />
+<xacro:include filename="$(find olv_module_descriptions)/urdf/olv-srv01.urdf.xacro" />
+<xacro:include filename="$(find olv_module_descriptions)/urdf/olv-cam01.urdf.xacro" />
 <xacro:include filename="$(find olv_module_descriptions)/urdf/olv-wheel01.urdf.xacro" />
+<xacro:include filename="$(find olv_module_descriptions)/urdf/olv-chassis01.urdf.xacro" />
 
 <link name="base_link" />
-<xacro:olv-srv01 namespace="pan" parent_link="base_link" mounting_side="bottom" mounting_rotation="0"/>
-<xacro:olv-wheel01 namespace="wheel01" parent_link="pan_rotor_link" mounting_side="bottom" mounting_rotation="0"/>
+
+<xacro:olv-srv01 namespace="fr" parent_link="chassis01_fr_link" mounting_side="right" mounting_rotation="0"/>
+<xacro:olv-srv01 namespace="fl" parent_link="chassis01_fl_link" mounting_side="left" mounting_rotation="0"/>
+<xacro:olv-srv01 namespace="br" parent_link="chassis01_br_link" mounting_side="right" mounting_rotation="0"/>
+<xacro:olv-srv01 namespace="bl" parent_link="chassis01_bl_link" mounting_side="left" mounting_rotation="0"/>
+<xacro:olv-chassis01 namespace="chassis01" parent_link="base_link" mounting_side="bottom" mounting_rotation="0"/>
+
+<xacro:olv-wheel01 namespace="wheel01" parent_link="fr_rotor_link" mounting_side="bottom" mounting_rotation="0"/>
+<xacro:olv-wheel01 namespace="wheel02" parent_link="fl_rotor_link" mounting_side="bottom" mounting_rotation="0"/>
+<xacro:olv-wheel01 namespace="wheel03" parent_link="br_rotor_link" mounting_side="bottom" mounting_rotation="0"/>
+<xacro:olv-wheel01 namespace="wheel04" parent_link="bl_rotor_link" mounting_side="bottom" mounting_rotation="0"/>
+
 </robot>
