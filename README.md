@@ -22,6 +22,8 @@ source install/setup.bash
 ros2 launch olv_kit_descriptions visualize_olive_owl.launch.py
 ```
 
+![OWL](/images/OWL.gif "OWL")
+
 ### ANT
 ```
 ros2 launch olv_kit_descriptions visualize_olive_ant.launch.py
